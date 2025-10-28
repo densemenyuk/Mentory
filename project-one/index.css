@@ -22,6 +22,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
+    position: sticky;
 }
 
 .navigation {
@@ -65,6 +66,7 @@ body {
 .about__text {
     color: #fff;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .constructor{
@@ -72,11 +74,60 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
+    width: 240px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-image: url(/project-one/images/bg.svg);
     height: 401px;
-    width: 1430px;
+    width: 1400px;
+    padding: 0 15px 0 15px;
+    position: relative;
+}
+
+.group {
+    display: flex;
+    gap: 85px;
+    width: 100%;
+}
+
+.main__info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main__info__header {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 800;
+    text-align: start;
+}
+
+.button {
+    border: none;
+    width: 300px;
+    height: 61px;
+    background-color: #ff7d00;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.bag {
+    position: absolute;
+    top: 62%;
+    left: 85%;
 }
