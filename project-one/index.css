@@ -131,3 +131,31 @@ body {
     top: 62%;
     left: 85%;
 }
+
+.about__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 233px;
+    background-color: #73E5FF;
+    padding: 0 15px 0 15px;
+    width: 1400px;
+    text-align: start;
+    gap: 25px;
+}
+
+.about__header {
+    width: 660px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #000 ;
+}
+
+.about__description {
+    font-size: 20px;
+    height: 96px;
+    width: 1011px;
+    line-height: 45px;
+    font-weight: 600;
+}
