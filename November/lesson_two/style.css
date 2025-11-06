@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
+
+.first {
+  color: red;
+}
+
+.second {
+  color: green;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background: linear-gradient(45deg, yellow, green);
+  padding: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s all ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(-45deg, green, skyblue);
+  transition: all 0.5s;
+}
+
+.button:active {
+  background: red;
+}
+
+.test {
+  height: 100px;
+  width: 400px;
+  background: gray;
+  border: 5px solid red;
+  overflow: auto;
+}
+
+.img_wrapper {
+  height: 100px;
+  width: 150px;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.img_wrapper:hover img {
+  transform: scale(110%);
+}
+
+.loader {
+  border: 15px red solid;
+  border-bottom-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: spin 2s ease-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.child {
+    color: green;
+}
+
+.father .child {
+  color: red;
+}
+
+
+.card {}
+
+.card .title {}
+
+.card .price {}
