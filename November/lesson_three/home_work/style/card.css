@@ -1,0 +1,84 @@
+.main__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 700px;
+  width: 1200px;
+  gap: 10px;
+}
+
+.cards__list__item {
+  height: 49%;
+  width: 49%;
+  min-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.shef {
+  background-image: url(./image/Gemini_Generated_Image_l71idol71idol71i.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.menu {
+  background-image: url(./image/Gemini_Generated_Image_xu19ubxu19ubxu19.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.drinks {
+  background-image: url(./image/Gemini_Generated_Image_pc6fmmpc6fmmpc6f.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.your__turn {
+  background-image: url(./image/Gemini_Generated_Image_rih4n7rih4n7rih4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.cards__list__item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  opacity: 0.7;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background: #fff;
+  opacity: 0.6;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: #F5F1EB;
+}
