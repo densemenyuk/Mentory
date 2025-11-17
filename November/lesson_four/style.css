@@ -1,13 +1,20 @@
 .block {
-    position: relative;
+  position: relative;
 }
 
 [data-notification]::after {
-    content: attr(data-notification);
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 0;
-    right: 0;
+  content: attr(data-notification);
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
+.test__p > li {
+  background-color: blue;
+}
+
+.test__p1 ~ nav {
+  background-color: purple;
 }
