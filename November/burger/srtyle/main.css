@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(./header/header.css);
+@import url(./welcome/welcome.css);
+@import url(./food-list/food-list.css);
 
 * {
   margin: 0;
@@ -16,9 +18,26 @@ body {
   color: #fff;
 }
 
+img {
+  /* max-width: 100%; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
 a {
   color: #fff;
   text-decoration: none;
+}
+
+p + p {
+  margin-top: 15px;
 }
 
 ul {
@@ -27,7 +46,7 @@ ul {
 
 .container {
   max-width: 1140px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -45,6 +64,7 @@ ul {
   border-radius: 5px;
 
   transition: opacity 0.3s;
+  text-transform: uppercase;
 }
 
 .btn:hover {

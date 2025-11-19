@@ -1,5 +1,7 @@
 .header {
   padding: 25px 0;
+  z-index: 3;
+  position: relative;
 }
 
 .header .container {

@@ -1,0 +1,36 @@
+.main {
+}
+
+.welcome {
+  min-height: 100vh;
+  margin-top: -100px;
+  padding: 240px 00;
+
+  background-image: url("../../images/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome__text {
+  width: 550px;
+}
+
+.container {
+}
+
+.welcome__subtitle {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  margin-bottom: 7px;
+}
+
+.welcome__title {
+  font-size: 58px;
+}
+
+.welcome__desc {
+  font-size: 18px;
+  opacity: 0.7;
+  margin: 40px 0;
+}
