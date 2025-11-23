@@ -1,0 +1,43 @@
+.feedback {
+  padding-bottom: 150px;
+}
+
+.feedback .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
+
+}
+
+.feedback__img {
+}
+
+.feedback__text {
+  text-align: center;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.feedback__text::before {
+  content: url("../../images/icons/quote.svg");
+}
+
+.feedback__desc {
+  opacity: 0.7;
+  margin: 30px 0;
+  width: 370px;
+}
+
+.feedback__author {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.feedback__subauthor {
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.7;
+  display: block;
+}

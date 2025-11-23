@@ -4,6 +4,9 @@
 @import url(./food-list/food-list.css);
 @import url(order/order.css);
 @import url(./product/product.css);
+@import url(./feedback/feedback.css);
+@import url(./download/download.css);
+@import url(./footer/footer.css);
 
 * {
   margin: 0;
