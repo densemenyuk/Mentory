@@ -1,0 +1,93 @@
+/* ===========================================================
+GRID Пример номер 1 */
+
+.block {
+  background-color: red;
+  padding: 1rem;
+}
+
+.grid-1 {
+  display: grid;
+  padding: 1rem;
+  gap: 0.75rem;
+  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 3fr));
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  margin: 20px 0;
+}
+
+.block:nth-child(2) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: green;
+}
+
+.block:last-child {
+  background-color: yellow;
+}
+
+.block:first-child {
+  background-color: blue;
+}
+
+/* ===========================================================
+GRID Пример номер 2 */
+
+.grid-2 {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+header {
+  background-color: #a5a5a5;
+  padding: 2rem;
+  grid-area: header;
+}
+.sidebar {
+  background-color: skyblue;
+  padding: 2rem;
+  grid-area: sidebar;
+}
+.content {
+  background-color: yellow;
+  padding: 2rem;
+  grid-area: content;
+}
+.footer {
+  background-color: gray;
+  padding: 2rem;
+  grid-area: footer;
+}
+
+.news__block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.news__card {
+  padding: 2rem;
+  background-color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+  .news__block {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news__card {
+    background-color: yellowgreen;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .news__block {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+    .news__card {
+    background-color: rgb(205, 177, 50);
+  }
+}
