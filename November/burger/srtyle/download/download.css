@@ -7,6 +7,7 @@
 .download .container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .download__title {

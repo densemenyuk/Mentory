@@ -7,6 +7,7 @@
 @import url(./feedback/feedback.css);
 @import url(./download/download.css);
 @import url(./footer/footer.css);
+@import url(media/media.css);
 
 * {
   margin: 0;
