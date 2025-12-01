@@ -97,3 +97,46 @@ const predictions = [
   "Ты станешь разработчиком, которым будешь гордиться.",
   "Ты обязательно справишься — и даже лучше, чем ожидаешь."
 ];
+
+const getPredictionButton = document.querySelector('.get__prediction')
+const predictionTextWrap = document.querySelector('.prediction__text__wrapper')
+// const predictionText = document.querySelector('.prediction__text')
+
+// function getPrediction() {
+//   const randomIndex = Math.trunc(Math.random() * predictions.length);
+
+// }
+
+function getPrediction() {
+  const randomIndex = Math.trunc(Math.random() * predictions.length);
+  // Небезопасный способ
+  // predictionTextWrap.innerHTML = `
+  //   <p class="prediction__text">${predictions[randomIndex]}</p>
+  // `;
+
+  const p = document.createElement('p');
+  p.classList.add('prediction__text')
+  p.textContent = predictions[randomIndex];
+  // predictionTextWrap.innerHTML = ''
+  const uselessParagraphs = predictionTextWrap.querySelectorAll('p')
+  uselessParagraphs.forEach((paragraph) => {
+    paragraph.remove();
+  })
+  
+  predictionTextWrap.appendChild(p)
+  
+}
+
+getPredictionButton.addEventListener('click', getPrediction);
+
+// getPredictionButton.addEventListener('click', () => {
+//   console.log('click');
+// })
+
+
+// const btn = document.getElementById('get__prediction')
+// const btn2 = document.getElementsByClassName('get__prediction')
+// const btn3 = document.querySelector('get__prediction')
+
+// console.log(btn);
+// console.log(btn2);
