@@ -4,12 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Корневая страница</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <!-- Страница создана для Git Hub Pages -->
     <!-- Предназначена для перехода на друкие страницы -->
+    <div class="min-h-screen bg-blue-500">
+      <div class="flex flex-col items-center">
+        <h1 class="font-mono text-3xl font-bold text-white">
+          Тут можно отследить мой прогресс обучения
+        </h1>
+        <p class="font-mono text-xl text-white">Ниже можно найти мои работы</p>
+      </div>
 
-    <a href="./November/burger/index.html">Burger Landing</a>
-    <a href="./November/lesson_three/home_work/index.html">Cards</a>
+      <section class="flex flex-col items-center mt-10 gap-5">
+        <a
+          class="text-lg text-white min-w-3xs min-h-15 flex justify-center items-center rounded-lg bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700"
+          href="./November/burger/index.html"
+          >Burger Landing</a
+        >
+        <a
+          class="text-lg text-white min-w-3xs min-h-15 flex justify-center items-center rounded-lg bg-violet-500 hover:bg-violet-600 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700"
+          href="./November/lesson_three/home_work/index.html"
+          >Cards</a
+        >
+      </section>
+    </div>
   </body>
 </html>
