@@ -140,3 +140,5 @@ getPredictionButton.addEventListener('click', getPrediction);
 
 // console.log(btn);
 // console.log(btn2);
+
+
