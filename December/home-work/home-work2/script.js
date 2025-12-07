@@ -5,10 +5,8 @@ const userInfo = {
   about: "",
 };
 
-
 // Получение данных с input
 const getButtonValue = document.querySelector(".btn");
-
 
 function getValue() {
   //Данные с input и внесение в раннее созданный объект
@@ -22,12 +20,11 @@ function getValue() {
   userInfo.car = valueCar;
 
   // Данные с textarea
-  const valueAbout = document.querySelector('#about').value;
+  const valueAbout = document.querySelector("#about").value;
   console.log(`Инфа о себе ${valueAbout}`);
   userInfo.about = valueAbout;
 
   console.log(userInfo);
 }
-
 
 getButtonValue.addEventListener("click", getValue);
