@@ -45,3 +45,22 @@ function sumNumber (number) {
 }
 
 sumNumber(10);
+
+// 4. Переворот строки
+// Написать функцию reverseString(str), которая переворачивает строку.
+
+// Пример:
+// "hello" → "olleh"
+
+let text = 'hello world'
+
+function reverseText () {
+    let reversed = ''
+    for (i = text.length - 1; i >=0 ; i --) {
+        reversed += text[i]
+    }
+    console.log(reversed);
+}
+
+reverseText();
+ 
