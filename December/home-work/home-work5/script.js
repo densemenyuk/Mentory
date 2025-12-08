@@ -77,3 +77,31 @@ function newArray() {
   console.log(array);
 }
 newArray();
+
+
+// 6. Конвертер температуры
+// Создать 2 функции:
+
+// celsiusToFahrenheit(c)
+
+// fahrenheitToCelsius(f)
+
+// Формулы:
+// F = C * 9/5 + 32
+// C = (F - 32) * 5/9
+
+
+function celsiusToFahrenheit (f) {
+  const c = (f - 32) * 5/9
+  console.log(`Температура из фаренгейтов по цельсию ${c}`);
+}
+celsiusToFahrenheit(50);
+
+function fahrenheitToCelsius (c) {
+  const f = c * 9/5 + 32
+  console.log(`Температура из цельсия по фаренгейту ${f}`);
+}
+fahrenheitToCelsius(30);
+
+
+
