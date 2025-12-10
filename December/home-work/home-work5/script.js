@@ -178,6 +178,10 @@ const numbers = {
 };
 
 function countProps() {
-
+  let count = 0;
+  for (const key in numbers) {
+    count ++;
+  }
+  return count;
 }
 console.log(countProps());
