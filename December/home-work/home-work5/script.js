@@ -180,8 +180,22 @@ const numbers = {
 function countProps() {
   let count = 0;
   for (const key in numbers) {
-    count ++;
+    count++;
   }
   return count;
 }
 console.log(countProps());
+
+// 11. Вывести числа от 1 до N (while)
+// Написать функцию printTo(n), которая выводит в консоль числа от 1 до n с помощью цикла while.
+
+let count = 0;
+
+function printTo(n) {
+  while (count < n) {
+    console.log(`Число равно ${count}`);
+    count++;
+  }
+}
+
+printTo(10);
