@@ -195,7 +195,7 @@ function printTo(n) {
   while (count < n) {
     console.log(`Число равно ${count}`);
     count++;
-  }
-}
+  };
+};
 
 printTo(10);
