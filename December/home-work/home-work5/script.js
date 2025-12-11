@@ -195,7 +195,36 @@ function printTo(n) {
   while (count < n) {
     console.log(`Число равно ${count}`);
     count++;
-  };
-};
+  }
+}
 
 printTo(10);
+
+// 12. Найти число в массиве вручную (без includes)
+// Использовать цикл (любой: for, for…of, while).
+// Функция manualFindIndex(arr, value) должна вернуть:
+
+// index, найденного элемента
+
+// undefined— если элемент не найден
+
+// Пример:
+// manualFindIndex([1,2,3], 2) → 1
+
+// Решение прислать ссылкой на исходник в github с JS файлом где будет оформлено
+// // Задача в комментарии и снизу решение
+// Либо на платформе аналогичным образом в решении оформить код
+
+// Особое внимание уделить тексту задачи и внимательно перепроверять работоспособность кода и соответствие задаче.
+
+const arr = [1, 2, 3, 4, 5];
+
+function manualFindIndex(array, value) {
+  for (i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return i
+    };
+  } ;
+};
+
+console.log(manualFindIndex(arr, 4));
