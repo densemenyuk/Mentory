@@ -19,6 +19,8 @@ body {
   height: 60vh;
   margin-top: 50px;
   border-radius: 15px;
+  display: flex;
+  align-items: center;
 }
 
 .header {
@@ -26,6 +28,7 @@ body {
   justify-content: center;
   color: #1d1d1d;
   font-size: 48px;
+  margin: 0 auto;
 }
 
 .swiper-slide {

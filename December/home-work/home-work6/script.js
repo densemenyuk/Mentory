@@ -2,6 +2,10 @@
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 12,
   spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -21,4 +25,3 @@ let swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
