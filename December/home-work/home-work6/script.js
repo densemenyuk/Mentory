@@ -1,7 +1,7 @@
 // <!-- Initialize Swiper -->
 let swiper = new Swiper(".mySwiper", {
-  slidesPerView: 12,
-  spaceBetween: 10,
+  slidesPerView: 1,
+  spaceBetween: 5,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -11,14 +11,14 @@ let swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
-    344: {
-      slidesPerView: 1,
-      spaceBetween: 5,
-    },
-    359: {
-      slidesPerView: 1,
-      spaceBetween: 5,
-    },
+    // 344: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 5,
+    // },
+    // 359: {
+    //   slidesPerView: 1,
+    //   spaceBetween: 5,
+    // },
     375: {
       slidesPerView: 1,
       spaceBetween: 5,
