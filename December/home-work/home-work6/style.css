@@ -14,6 +14,7 @@ body {
 }
 
 
+
 .swiper {
   width: 90%;
   height: 60vh;
@@ -39,14 +40,14 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  height: 60vh;
-}
+};
 
 .swiper-slide img {
   display: block;
   max-width: 150px;
   max-height: 150px;
   object-fit: cover;
+    position: relative;
 }
 
 /* CARDS */
@@ -60,7 +61,6 @@ body {
   height: 50%;
   gap: 30px;
   border-radius: 15px;
-  position: relative;
 }
 
 .rating {
@@ -68,7 +68,7 @@ body {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 253px;
+  top: 46%;
   left: 33%;
   gap: 7px;
   width: 110px;
@@ -109,4 +109,17 @@ body {
 .description p {
   color: #1d1d1d;
   margin: 40px 10px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .who {
+  gap: 20px;
+}
+}
+
+@media screen and (max-width: 1034px) {
+  .who {
+  gap: 10px;
+}
 }
