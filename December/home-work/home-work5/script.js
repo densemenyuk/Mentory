@@ -15,14 +15,11 @@ console.log(`a = ${a}, b = ${b}`);
 
 // false — если нечётное
 
-function number(num) {
-  if (num % 2 == 0) {
-    return num;
-  }
-  return num;
-}
+function isEven(num) {
+  return (num % 2 == 0);
+};
 
-console.log(number(10));
+console.log(isEven(9));
 
 // 3. Сумма чисел от 1 до N
 // Написать функцию, которая принимает число n и возвращает сумму всех чисел от 1 до n.
@@ -31,7 +28,7 @@ console.log(number(10));
 // sumTo(5) → 15
 
 function sumNumber(number) {
-  let sum = 0;
+  let sum = 1;
   for (let i = 0; i < number; i++) {
     sum += i;
   }
@@ -46,28 +43,30 @@ console.log(sumNumber(10));
 // Пример:
 // "hello" → "olleh"
 
-let text = "hello world";
+// let text = "hello world";
 
-function reverseText() {
+function reverseText(arg) {
   let reversed = "";
-  for (i = text.length - 1; i >= 0; i--) {
-    reversed += text[i];
-  }
-  console.log(reversed);
-}
+  for (let i = arg.length - 1; i >= 0; i--) {
+    reversed += arg[i];
+  };
+  return reversed;
+  // console.log(reversed);
+};
 
-reverseText();
+console.log(reverseText('hello world'));
+
 
 // 5. Фильтрация массива по чётным числам
 // Написать функцию filterEven(arr), которая возвращает новый массив только с чётными значениями.
 
-arr2 = [
-  23, 6, 13, 44, 234, 1272, 4347, 47, 45, 86, 20, 46, 28, 21, 44, 22, 90, 86, 2,
-];
+// arr2 = [
+//   23, 6, 13, 44, 234, 1272, 4347, 47, 45, 86, 20, 46, 28, 21, 44, 22, 90, 86, 2,
+// ];
 
-function newArray() {
+function filterEven(arr) {
   const array = [];
-  arr2.forEach((element) => {
+  arr.forEach((element) => {
     if (element % 2 == 0) {
       array.push(element);
     }
@@ -75,7 +74,7 @@ function newArray() {
   return array;
 }
 
-console.log(newArray());
+console.log(filterEven([12,56,11,23,56,20,11,13]));
 
 // 6. Конвертер температуры
 // Создать 2 функции:
@@ -88,17 +87,19 @@ console.log(newArray());
 // F = C * 9/5 + 32
 // C = (F - 32) * 5/9
 
-function celsiusToFahrenheit(f) {
-  const c = ((f - 32) * 5) / 9;
-  console.log(`Температура из фаренгейтов по цельсию ${c}`);
+function fahrenheitToCelsius(f) {
+ return c = ((f - 32) * 5) / 9;
+  // console.log(`Температура из фаренгейтов по цельсию ${c}`);
 }
-celsiusToFahrenheit(50);
+console.log( fahrenheitToCelsius(50));
 
-function fahrenheitToCelsius(c) {
-  const f = (c * 9) / 5 + 32;
-  console.log(`Температура из цельсия по фаренгейту ${f}`);
+
+function celsiusToFahrenheit(c) {
+  return f = (c * 9) / 5 + 32;
+  // console.log(`Температура из цельсия по фаренгейту ${f}`);
 }
-fahrenheitToCelsius(30);
+console.log(celsiusToFahrenheit(30));
+
 
 // 7. Проверка строки на палиндром
 // Написать функцию isPalindrome(str), которая:
@@ -128,15 +129,19 @@ console.log(isPalindrome("home"));
 // 8. Сумма всех элементов массива (for)
 // Написать функцию sumArray(arr), которая с помощью обычного цикла for возвращает сумму всех чисел массива.
 
-function sumNumberArray() {
-  sum = 0;
-  for (i = 0; i < arr2.length; i++) {
-    sum += arr2[i];
+// arr2 = [
+//   23, 6, 13, 44, 234, 1272, 4347, 47, 45, 86, 20, 46, 28, 21, 44, 22, 90, 86, 2,
+// ];
+
+function sumNumberArray(arg2) {
+  let sum = 0;
+  for (let i = 0; i < arg2.length; i++) {
+    sum += arg2[i];
   }
   return sum;
 }
 
-console.log(sumNumberArray());
+console.log(sumNumberArray([1,1,1,1]));
 
 // 9. Найти самое длинное слово в массиве строк (for…of)
 // Написать функцию longestWord(words), которая с помощью for…of находит самое длинное слово.
@@ -144,7 +149,26 @@ console.log(sumNumberArray());
 // Пример:
 // ["apple", "banana", "kiwi"] → "banana"
 
-const fruitArr = [
+// const fruitArr = [
+//   "apple",
+//   "banana",
+//   "kiwi",
+//   "Pineapple",
+//   "Mango",
+//   "Persimmon",
+//   "Passion fruit",
+// ];
+
+function longestWord(arg3) {
+  let checkWord = "";
+  for (const fruit of arg3) {
+    if (fruit.length > checkWord.length) {
+      checkWord = fruit;
+    }
+  }
+  return checkWord;
+};
+console.log(longestWord([
   "apple",
   "banana",
   "kiwi",
@@ -152,18 +176,7 @@ const fruitArr = [
   "Mango",
   "Persimmon",
   "Passion fruit",
-];
-
-function longestWord() {
-  checkWord = "";
-  for (const fruit of fruitArr) {
-    if (fruit.length > checkWord.length) {
-      word = fruit;
-    }
-  }
-  return word;
-}
-console.log(longestWord());
+]));
 
 // 10. Подсчитать количество свойств в объекте (for…in)
 // Написать функцию countProps(obj), которая возвращает число ключей объекта.
@@ -171,27 +184,27 @@ console.log(longestWord());
 // Пример:
 // { a: 1, b: 2, c: 3 } → 3
 
-const numbers = {
-  a: 1,
-  b: 2,
-  c: 3,
-};
+// const numbers = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+// };
 
-function countProps() {
+function countProps(obj) {
   let count = 0;
-  for (const key in numbers) {
+  for (const key in obj) {
     count++;
   }
   return count;
 }
-console.log(countProps());
+console.log(countProps({a:1, b:2, c:3}));
 
 // 11. Вывести числа от 1 до N (while)
 // Написать функцию printTo(n), которая выводит в консоль числа от 1 до n с помощью цикла while.
 
-let count = 0;
 
 function printTo(n) {
+  let count = 1;
   while (count < n) {
     console.log(`Число равно ${count}`);
     count++;
@@ -217,14 +230,14 @@ printTo(10);
 
 // Особое внимание уделить тексту задачи и внимательно перепроверять работоспособность кода и соответствие задаче.
 
-const arr = [1, 2, 3, 4, 5];
+// const arr = [1, 2, 3, 4, 5];
 
 function manualFindIndex(array, value) {
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     if (array[i] === value) {
       return i
     };
   } ;
 };
 
-console.log(manualFindIndex(arr, 4));
+console.log(manualFindIndex([1, 2, 3, 4, 5], 4));
