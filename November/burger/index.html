@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burger Landing</title>
     <link rel="stylesheet" href="./srtyle/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="header">
@@ -44,7 +45,7 @@
 
       <section class="food-list">
         <div class="container">
-          <div class="food-list__card">
+          <div class="food-list__card" data-aos="fade-up" data-aos-delay="200">
             <img
               src="../burger/images/food-list-1.jpg"
               alt="#"
@@ -57,7 +58,11 @@
               </p>
             </div>
           </div>
-          <div class="food-list__card">
+          <div
+            class="food-list__card"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <img
               src="../burger/images/food-list-2.jpg"
               alt="#"
@@ -70,7 +75,7 @@
               </p>
             </div>
           </div>
-          <div class="food-list__card">
+          <div class="food-list__card" data-aos="fade-up" data-aos-delay="200">
             <img
               src="../burger/images/food-list-3.jpg"
               alt="#"
@@ -83,7 +88,11 @@
               </p>
             </div>
           </div>
-          <div class="food-list__card">
+          <div
+            class="food-list__card"
+            data-aos="fade-down"
+            data-aos-delay="200"
+          >
             <img
               src="../burger/images/food-list-4.jpg"
               alt="#"
@@ -101,8 +110,15 @@
 
       <section class="order">
         <div class="container">
-          <img src="./images/burger.png" alt="#" class="order__img" />
-          <div class="order__text">
+          <img
+            src="./images/burger.png"
+            alt="#"
+            class="order__img"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          />
+          <div class="order__text" data-aos="fade-up" data-aos-duration="3000">
             <h3 class="order__title">Burger King</h3>
             <p class="order__desc">
               Together with McDonald’s, Burger King has grown to become
@@ -117,7 +133,11 @@
 
       <section class="product">
         <div class="container">
-          <div class="product__card card-queen">
+          <div
+            class="product__card card-queen"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h4 class="product__title">Dairy Queen</h4>
             <p class="product__desc">
               Dairy Queen is one of the biggest fast-food.
@@ -126,21 +146,33 @@
             <span class="product__old-price">$6</span>
             <a href="#" class="btn btn--small">order now</a>
           </div>
-          <div class="product__card card-hut">
+          <div
+            class="product__card card-hut"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <h4 class="product__title">Pizza Hut</h4>
             <p class="product__desc">Although the Pizza Hut Menu Prices.</p>
             <span class="product__price">$3</span>
             <span class="product__old-price">$7</span>
             <a href="#" class="btn btn--small">order now</a>
           </div>
-          <div class="product__card card-king">
+          <div
+            class="product__card card-king"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <h4 class="product__title">Burger King</h4>
             <p class="product__desc">Together with McDonald’s, Burger King.</p>
             <span class="product__price">$5</span>
             <span class="product__old-price">$6</span>
             <a href="#" class="btn btn--small">order now</a>
           </div>
-          <div class="product__card card-papa">
+          <div
+            class="product__card card-papa"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <h4 class="product__title">Papa John’s</h4>
             <p class="product__desc">
               Papa John’s is one of the most popular fast-food.
@@ -169,9 +201,17 @@
 
       <div class="download">
         <div class="container">
-          <p class="download__title">Download Our Menu</p>
+          <p class="download__title" data-aos="zoom-out-right">
+            Download Our Menu
+          </p>
 
-          <a href="./images/burger.png" class="btn" download>download</a>
+          <a
+            href="./images/burger.png"
+            class="btn"
+            data-aos="zoom-out-left"
+            download
+            >download</a
+          >
         </div>
       </div>
     </main>
@@ -253,5 +293,10 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
