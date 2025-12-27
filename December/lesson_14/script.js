@@ -207,30 +207,215 @@
 
 // Наследование классов!-----------------------------------------------------------
 
+// class Human {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   sayName () {
+//     console.log(this.name);
+
+//   }
+// }
+
+// class Worker extends Human {
+//   constructor(name, age, job, salary) {
+//     super(name, age)
+//     this.job = job;
+//     this.salary = salary;
+//   }
+// };
+
+// const worker = new Worker('Denis', 25, 'Developer', 500)
+// worker.sayName()
+
+// console.log(worker);
+
+// Вывод карточек пользователей------------------------------------------------------
+
 class Human {
-  constructor(name, age) {
+  constructor(name, secondName, age, gender) {
     this.name = name;
+    this.secondName = secondName;
     this.age = age;
-  }
-
-
-  sayName () {
-    console.log(this.name);
-    
+    this.gender = gender;
   }
 }
 
-class Worker extends Human {
-  constructor(name, age, job, salary) {
-    super(name, age)
-    this.job = job;
-    this.salary = salary;
+class User extends Human {
+  constructor(name, secondName, age, gender, role, email, login, password) {
+    super(name, secondName, age, gender);
+    this.role = role;
+    this.email = email;
+    this.login = login;
+    this.password = password;
   }
-};
 
+  get fullName() {
+    return `${this.name} ${this.secondName}`;
+  }
 
-const worker = new Worker('Denis', 25, 'Developer', 500)
-worker.sayName()
+  set fullName({ name, secondName }) {
+    this.name = name;
+    this.secondName = secondName;
+  }
+}
 
-console.log(worker);
+class ShowUserInfo {
+  constructor(user) {
+    this.user = user;
+  }
 
+  addToHtml(selectorParent, childEl) {
+    const parrentEl = document.querySelector(selectorParent);
+    parrentEl.appendChild(childEl);
+  }
+
+  creatHtmlStructure() {
+    const div = document.createElement("div");
+    div.classList.add("user-card");
+    div.innerHTML = `
+        <h2 class="user-fullName">${this.user.fullName}</h2>
+        <h2 class="user-age">${this.user.age}</h2>
+        <h2 class="user-email">${this.user.email}</h2>
+        <h2 class="user-login">${this.user.login}</h2>
+        <h2 class="user-gender">${this.user.gender}</h2>
+        <h2 class="user-role">${this.user.role}</h2>
+      `;
+
+    return div;
+  }
+}
+
+const users = [];
+users.push(
+  new User(
+    "John",
+    "Doe",
+    26,
+    "male",
+    "admin",
+    "test@boom.com",
+    "admin123",
+    "qwerty123"
+  )
+);
+users.push(
+  new User(
+    "John",
+    "Doe",
+    26,
+    "male",
+    "admin",
+    "test@boom.com",
+    "admin123",
+    "qwerty123"
+  )
+);
+users.push(
+  new User(
+    "John",
+    "Doe",
+    26,
+    "male",
+    "admin",
+    "test@boom.com",
+    "admin123",
+    "qwerty123"
+  )
+);
+users.push(
+  new User(
+    "John",
+    "Doe",
+    26,
+    "male",
+    "admin",
+    "test@boom.com",
+    "admin123",
+    "qwerty123"
+  )
+);
+users.push(
+  new User(
+    "John",
+    "Doe",
+    26,
+    "male",
+    "admin",
+    "test@boom.com",
+    "admin123",
+    "qwerty123"
+  )
+);
+users.push(
+  new User(
+    "John",
+    "Doe",
+    26,
+    "male",
+    "admin",
+    "test@boom.com",
+    "admin123",
+    "qwerty123"
+  )
+);
+
+const user1 = new User(
+  "John",
+  "Doe",
+  26,
+  "male",
+  "admin",
+  "test@boom.com",
+  "admin123",
+  "qwerty123"
+);
+const user2 = new User(
+  "Bill",
+  "Doen",
+  25,
+  "male",
+  "simple-user",
+  "test2@boom.com",
+  "admin1212313",
+  "qwerty125233"
+);
+const user3 = new User(
+  "John",
+  "Doe",
+  26,
+  "male",
+  "admin",
+  "test@boom.com",
+  "admin123",
+  "qwerty123"
+);
+const user4 = new User(
+  "John",
+  "Doe",
+  26,
+  "male",
+  "admin",
+  "test@boom.com",
+  "admin123",
+  "qwerty123"
+);
+const user5 = new User(
+  "John",
+  "Doe",
+  26,
+  "male",
+  "admin",
+  "test@boom.com",
+  "admin123",
+  "qwerty123"
+);
+
+users.forEach((user) => {
+  const showUserInfo = new ShowUserInfo(user);
+  const userHtmlStructur = showUserInfo.creatHtmlStructure();
+
+  showUserInfo.addToHtml(".user-wrapper", userHtmlStructur);
+});
