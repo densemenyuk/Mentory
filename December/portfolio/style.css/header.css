@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 120px;
+  width: 100vw;
+  
+}
+
+.header .container {
+  display: flex;
+  justify-content: center;
+  font-weight: 200;
+}
+
+.nav {
+    width: 100%;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 700px;
+    gap: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    list-style: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.header__info li:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.hero__block {
+  /* height: 89vh; */
+  color: #ededed;
+  display: flex;
+  justify-content: center;
+}
+
+.hero__block .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.hero__block-header {
+  font-size: 4.5rem;
+}
+
+.hero__block-header-name {
+  font-size: 3.7rem;
+  margin-bottom: 3.5rem;
+}
+
+.hero__block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hello {
+  width: 45px;
+}
+.hero__block-dicription {
+  color: #6b6868;
+  font-size: 2rem;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 500;
+  max-width: 700px;
+}
+
+.photo {
+  width: 400px;
+}

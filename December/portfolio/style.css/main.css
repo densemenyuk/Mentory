@@ -1,0 +1,26 @@
+@import url(./header.css);
+@import url(./main-info-block.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+.container {
+  width: 1280px;
+}
+
+.wrapper {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  height: 100vh;
+  /* background: -webkit-linear-gradient(90deg, #054c76, #0c192a, #471c3a);
+  background: linear-gradient(90deg, #054c76, #0c192a, #471c3a); */
+  background-image: url(./assets/images/IMG_7536.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 100% 100%;
+}
