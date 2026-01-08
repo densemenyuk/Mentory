@@ -32,4 +32,5 @@
 
 .header__info li:hover {
     cursor: pointer;
+    opacity: 1;
 }
