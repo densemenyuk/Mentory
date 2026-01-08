@@ -1,0 +1,31 @@
+.second__wrapper-about {
+  height: 101vh;
+  background: -webkit-linear-gradient(90deg, #8c11fa, #009ca0);
+  background: linear-gradient(90deg, #8c11fa, #009ca0);
+  display: flex;
+  justify-content: center;
+}
+
+.second__wrapper-header {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.second__wrapper-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second__wrapper-info-text {
+  color: #fff;
+  font-size: 1.4rem;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.second__wrapper-info-img {
+  width: 500px;
+}

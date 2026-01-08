@@ -3,8 +3,6 @@
   align-items: flex-end;
   justify-content: center;
   height: 120px;
-  width: 100vw;
-  
 }
 
 .header .container {
@@ -14,23 +12,27 @@
 }
 
 .nav {
-    width: 100%;
+  width: 100%;
+}
+
+.header__info a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.8;
 }
 
 .header__info {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    min-width: 700px;
-    gap: 50px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    list-style: none;
-    color: #fff;
-    opacity: 0.8;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  min-width: 700px;
+  gap: 50px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  list-style: none;
 }
 
 .header__info li:hover {
-    cursor: pointer;
-    opacity: 1;
+  cursor: pointer;
+  opacity: 1;
 }

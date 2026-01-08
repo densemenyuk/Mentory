@@ -1,0 +1,114 @@
+.third__wrapper {
+  height: 100vh;
+  background: -webkit-linear-gradient(90deg, #2f485c, #ff4c29);
+  background: linear-gradient(90deg, #2f485c, #ff4c29);
+  display: flex;
+  justify-content: center;
+}
+.third__wrapper-header {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.third__wrapper-skill {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+
+.third__wrapper-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 15px;
+}
+
+.html__header {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.html__img {
+  width: 100px;
+}
+
+.progress-container-html,
+.progress-container-css,
+.progress-container-js,
+.progress-container-git {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden; /* Чтобы полоса не выходила за границы */
+}
+
+.progress-bar-html {
+  height: 100%;
+  width: 0%; /* Начинаем с нуля */
+  background-color: #5aafff;
+  border-radius: 10px;
+  animation: fillProgress-html 2s ease-in-out forwards; /* Анимация */
+}
+.progress-bar-css {
+  height: 100%;
+  width: 0%; /* Начинаем с нуля */
+  background-color: #5aafff;
+  border-radius: 10px;
+  animation: fillProgress-css 2s ease-in-out forwards; /* Анимация */
+}
+
+.progress-bar-js {
+  height: 100%;
+  width: 0%; /* Начинаем с нуля */
+  background-color: #5aafff;
+  border-radius: 10px;
+  animation: fillProgress-js 2s ease-in-out forwards; /* Анимация */
+}
+
+.progress-bar-git {
+  height: 100%;
+  width: 0%; /* Начинаем с нуля */
+  background-color: #5aafff;
+  border-radius: 10px;
+  animation: fillProgress-git 2s ease-in-out forwards; /* Анимация */
+}
+
+@keyframes fillProgress-html {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  } /* Конечный процент загрузки */
+}
+
+@keyframes fillProgress-css {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  } /* Конечный процент загрузки */
+}
+
+@keyframes fillProgress-js {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 35%;
+  } /* Конечный процент загрузки */
+}
+
+@keyframes fillProgress-git {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 68%;
+  } /* Конечный процент загрузки */
+}
