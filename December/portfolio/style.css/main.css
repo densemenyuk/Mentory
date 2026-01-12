@@ -3,6 +3,12 @@
 @import url(./skills.css);
 @import url(./about.css);
 @import url(./projects.css);
+@import url(./contacts.css);
+
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
